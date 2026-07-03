@@ -1,0 +1,7 @@
+# Operacoes basicas com texto (cadeia de caracteres)
+nome = input("Digite seu nome: ")
+print(f"Ola, {nome}!")
+print(f"Seu nome tem {len(nome)} caracteres")
+print(f"Em maiusculas: {nome.upper()}")
+print(f"Em minusculas: {nome.lower()}")
+print(f"Primeira letra: {nome[0]}")
