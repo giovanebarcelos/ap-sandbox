@@ -1,6 +1,6 @@
 while True:
     print("1-Somar 2-Subtrair 3-Mult 4-Div 5-Sair")
-    op = int(input("Opcao: "))
+    op = int(input("Opção: "))
     if op == 5: break
     if 1 <= op <= 4:
         a = float(input("N1: ")); b = float(input("N2: "))

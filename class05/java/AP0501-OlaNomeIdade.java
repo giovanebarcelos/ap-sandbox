@@ -4,6 +4,6 @@ public class Saudacao {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nome: "); String nome = sc.nextLine();
         System.out.print("Idade: "); int idade = sc.nextInt();
-        System.out.println("Ola, " + nome + "! Voce tem " + idade + " anos.");
+        System.out.println("Olá, " + nome + "! Você tem " + idade + " anos.");
     }
 }
