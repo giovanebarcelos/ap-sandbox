@@ -11,7 +11,7 @@ apresentado em **Portugol** nos slides das aulas.
 ## Estrutura de diretórios
 
 ```
-repository/
+ap-sandbox/
   class01/                     # Uma pasta por aula (class01 … class26)
     python/  AP0101-*.py       # Python 3.10+
     java/    AP0101-*.java      # Java 17+
@@ -20,6 +20,8 @@ repository/
   class26/
   README.md                    # Este arquivo
 ```
+
+> Repositório: [https://github.com/giovanebarcelos/ap-sandbox/](https://github.com/giovanebarcelos/ap-sandbox/)
 
 ### Convenção de nomes
 
