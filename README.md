@@ -21,7 +21,7 @@ ap-sandbox/
   README.md                    # Este arquivo
 ```
 
-> Repositório: [https://github.com/giovanebarcelos/ap-sandbox/](https://github.com/giovanebarcelos/ap-sandbox/)
+> Repositório: [https://github.com/giovanebarcelos/ap-sandbox/tree/main/](https://github.com/giovanebarcelos/ap-sandbox/tree/main/)
 
 ### Convenção de nomes
 
