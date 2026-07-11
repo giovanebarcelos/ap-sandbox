@@ -4,7 +4,7 @@ Repositório de código-fonte do curso **Algoritmos e Programação**  .
 Cada exemplo é implementado em **3 linguagens** — Python, Java e C++ — a partir do mesmo algoritmo
 apresentado em **Portugol** nos slides das aulas.
 
-**Prof. Giovane Barcelos** 
+**Prof. Giovane Barcelos** — [💻 Códigos Fonte](https://github.com/giovanebarcelos/ap-sandbox) 
 
 ---
 
