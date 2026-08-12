@@ -4,11 +4,11 @@ programa {
         soma = 0
         escreva("Digite um número (0 para sair): ")
         leia(n)
-        enquanto (n != 0) faca
+        enquanto (n != 0) {
             soma = soma + n
             escreva("Digite um número (0 para sair): ")
             leia(n)
-        fimenquanto
+        }
         escreva("Soma total: ", soma)
     }
 }

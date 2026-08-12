@@ -6,12 +6,12 @@ programa {
         escreva("m[1][0] = ", m[1][0])   // 4
         escreva("Matriz completa:")
         inteiro i, j
-        para i de 0 ate 1 faca
+        para (i = 0; i <= 1; i++) {
             cadeia linha = ""
-            para j de 0 ate 2 faca
+            para (j = 0; j <= 2; j++) {
                 linha = linha + m[i][j] + " "
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

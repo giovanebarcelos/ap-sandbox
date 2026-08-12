@@ -11,10 +11,10 @@ programa {
 
         temTitulo = (resp == "s") ou (resp == "S")
 
-        se (idade >= 16) e (temTitulo) entao
+        se ((idade >= 16) e (temTitulo)) {
             escreva("Pode votar")
-        senao
+        } senao {
             escreva("Nao pode votar")
-        fimse
+        }
     }
 }

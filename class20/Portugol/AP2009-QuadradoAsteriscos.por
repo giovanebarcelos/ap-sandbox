@@ -3,12 +3,12 @@ programa {
         inteiro n = 4
         inteiro i, j
         cadeia linha
-        para i de 1 ate n faca
+        para (i = 1; i <= n; i++) {
             linha = ""
-            para j de 1 ate n faca
+            para (j = 1; j <= n; j++) {
                 linha = linha + "*"
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

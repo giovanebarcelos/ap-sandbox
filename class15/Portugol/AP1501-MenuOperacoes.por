@@ -13,14 +13,14 @@ programa {
         leia(a)
         escreva("Segundo numero: ")
         leia(b)
-        se opcao == 1 entao
+        se (opcao == 1) {
             escreva("Resultado: ", a + b)
-        senao se opcao == 2 entao
+        } senao se (opcao == 2) {
             escreva("Resultado: ", a - b)
-        senao se opcao == 3 entao
+        } senao se (opcao == 3) {
             escreva("Resultado: ", a * b)
-        senao
+        } senao {
             escreva("Opcao invalida")
-        fimse
+        }
     }
 }

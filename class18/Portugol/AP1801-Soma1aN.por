@@ -4,9 +4,9 @@ programa {
         escreva("N: ")
         leia(n)
         soma = 0
-        para i de 1 ate n faca
+        para (i = 1; i <= n; i++) {
             soma = soma + i
-        fimpara
+        }
         escreva("Soma de 1 a ", n, " = ", soma)
     }
 }

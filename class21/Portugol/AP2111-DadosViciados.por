@@ -1,3 +1,5 @@
+inclua biblioteca Util --> u
+
 programa {
     funcao inicio() {
         inteiro lancamentos, i, face
@@ -7,16 +9,16 @@ programa {
         escreva("Quantos lançamentos? ")
         leia(lancamentos)
 
-        para i de 1 ate lancamentos passo 1 faca
-            face = sorteia(1, 6)
+        para (i = 1; i <= lancamentos; i = i + 1) {
+            face = u.sorteia(1, 6)
             freq[face] = freq[face] + 1
-        fimpara
+        }
 
         escreva("")
         escreva("Resultados:")
-        para face de 1 ate 6 faca
+        para (face = 1; face <= 6; face++) {
             pct = freq[face] / lancamentos * 100
             escreva("Face ", face, ": ", freq[face], " vezes (", pct, "%)")
-        fimpara
+        }
     }
 }

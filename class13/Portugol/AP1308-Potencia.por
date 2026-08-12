@@ -3,9 +3,9 @@ programa {
         inteiro base = 2
         inteiro expoente = 10
         inteiro r = 1
-        para i de 0 ate expoente - 1 faca
+        para (inteiro i = 0; i <= expoente - 1; i++) {
             r = r * base
-        fimpara
+        }
         escreva(base, "^", expoente, " = ", r)
     }
 }

@@ -9,12 +9,12 @@ programa {
         media = (n1 + n2) / 2
         escreva("Media: ", media)
 
-        se media >= 7 entao
+        se (media >= 7) {
             escreva("APROVADO")
-        senao se media >= 5 entao
+        } senao se (media >= 5) {
             escreva("RECUPERACAO")
-        senao
+        } senao {
             escreva("REPROVADO")
-        fimse
+        }
     }
 }

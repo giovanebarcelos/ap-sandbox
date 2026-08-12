@@ -2,13 +2,13 @@ programa {
     funcao inicio() {
         cadeia senhaCorreta = "1234"
         cadeia senha
-        repita
+        faca {
             escreva("Digite a senha: ")
             leia(senha)
-            se (senha != senhaCorreta) entao
+            se (senha != senhaCorreta) {
                 escreva("Senha incorreta. Tente novamente.")
-            fimse
-        ate (senha == senhaCorreta)
+            }
+        } enquanto (!(senha == senhaCorreta))
         escreva("Acesso permitido!")
     }
 }

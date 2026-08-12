@@ -5,18 +5,18 @@ programa {
         inteiro idade
         escreva("Idade: ")
         leia(idade)
-        se idade < 0 entao
+        se (idade < 0) {
             escreva("Idade inválida!")
-        senao se idade <= 12 entao
+        } senao se (idade <= 12) {
             escreva("Criança")
-        senao se idade <= 17 entao
+        } senao se (idade <= 17) {
             escreva("Adolescente")
-        senao se idade <= 59 entao
+        } senao se (idade <= 59) {
             escreva("Adulto")
-        senao se idade <= 120 entao
+        } senao se (idade <= 120) {
             escreva("Idoso")
-        senao
+        } senao {
             escreva("Idade improvável!")
-        fimse
+        }
     }
 }

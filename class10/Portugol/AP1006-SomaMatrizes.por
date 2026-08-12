@@ -7,18 +7,18 @@ programa {
         inteiro b[2][3] = {{10, 20, 30}, {40, 50, 60}}
         inteiro c[2][3]
         inteiro i, j
-        para i de 0 ate LIN - 1 faca
-            para j de 0 ate COL - 1 faca
+        para (i = 0; i <= LIN - 1; i++) {
+            para (j = 0; j <= COL - 1; j++) {
                 c[i][j] = a[i][j] + b[i][j]
-            fimpara
-        fimpara
+            }
+        }
         escreva("Matriz soma:")
-        para i de 0 ate LIN - 1 faca
+        para (i = 0; i <= LIN - 1; i++) {
             cadeia linha = ""
-            para j de 0 ate COL - 1 faca
+            para (j = 0; j <= COL - 1; j++) {
                 linha = linha + c[i][j] + " "
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

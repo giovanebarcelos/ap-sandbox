@@ -7,17 +7,17 @@ programa {
         leia(b)
         escreva("Lado C: ")
         leia(c)
-        se (a + b > c) e (a + c > b) e (b + c > a) entao
+        se ((a + b > c) e (a + c > b) e (b + c > a)) {
             escreva("É um triângulo!")
-            se (a == b) e (b == c) entao
+            se ((a == b) e (b == c)) {
                 escreva("Tipo: Equilátero")
-            senao se (a == b) ou (a == c) ou (b == c) entao
+            } senao se ((a == b) ou (a == c) ou (b == c)) {
                 escreva("Tipo: Isósceles")
-            senao
+            } senao {
                 escreva("Tipo: Escaleno")
-            fimse
-        senao
+            }
+        } senao {
             escreva("Não forma um triângulo.")
-        fimse
+        }
     }
 }

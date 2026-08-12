@@ -5,14 +5,14 @@ programa {
 
         somaNotas = 0
         somaPesos = 0
-        para i de 0 ate tam - 1 passo 1 faca
+        para (i = 0; i <= tam - 1; i = i + 1) {
             somaNotas = somaNotas + notas[i] * pesos[i]
             somaPesos = somaPesos + pesos[i]
-        fimpara
+        }
 
-        se somaPesos > 0 entao
+        se (somaPesos > 0) {
             retorne somaNotas / somaPesos
-        fimse
+        }
         retorne 0
     }
 

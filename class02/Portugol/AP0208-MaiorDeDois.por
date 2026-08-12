@@ -3,10 +3,10 @@ programa {
         inteiro a = 7
         inteiro b = 12
 
-        se a > b entao
+        se (a > b) {
             escreva("Maior: ", a)
-        senao
+        } senao {
             escreva("Maior: ", b)
-        fimse
+        }
     }
 }

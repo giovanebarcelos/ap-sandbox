@@ -8,15 +8,15 @@ programa {
         escreva("Digite o número a buscar: ")
         leia(buscado)
         i = 0
-        enquanto (i < 7) e (nao encontrado) faca
-            se numeros[i] == buscado entao
+        enquanto ((i < 7) e (nao encontrado)) {
+            se (numeros[i] == buscado) {
                 escreva("Encontrado na posição ", i, "!")
                 encontrado = verdadeiro
-            fimse
+            }
             i = i + 1
-        fimenquanto
-        se nao encontrado entao
+        }
+        se (nao encontrado) {
             escreva("Número não encontrado no vetor.")
-        fimse
+        }
     }
 }

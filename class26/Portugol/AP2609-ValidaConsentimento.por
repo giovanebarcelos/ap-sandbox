@@ -3,10 +3,10 @@ programa {
         logico consentimento
         consentimento = verdadeiro
 
-        se consentimento entao
+        se (consentimento) {
             escreva("Dados processados conforme a LGPD.")
-        senao
+        } senao {
             escreva("Processamento negado: sem consentimento.")
-        fimse
+        }
     }
 }

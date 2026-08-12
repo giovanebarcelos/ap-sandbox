@@ -4,12 +4,12 @@ programa {
         inteiro b = 3
         inteiro c = 5
 
-        se (a == b) e (b == c) entao
+        se ((a == b) e (b == c)) {
             escreva("Equilatero")
-        senao se (a == b) ou (b == c) ou (a == c) entao
+        } senao se ((a == b) ou (b == c) ou (a == c)) {
             escreva("Isosceles")
-        senao
+        } senao {
             escreva("Escaleno")
-        fimse
+        }
     }
 }

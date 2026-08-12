@@ -3,9 +3,9 @@ programa {
         inteiro i
         cadeia s
         s = ""
-        para i de 1 ate n passo 1 faca
+        para (i = 1; i <= n; i = i + 1) {
             s = s + c
-        fimpara
+        }
         retorne s
     }
 

@@ -3,8 +3,8 @@ programa {
         inteiro n = 7
         inteiro i
 
-        para i de 1 ate 10 faca
+        para (i = 1; i <= 10; i++) {
             escreva(n, " x ", i, " = ", n * i)
-        fimpara
+        }
     }
 }

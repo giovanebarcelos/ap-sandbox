@@ -5,10 +5,10 @@ programa {
         escreva("Digite um numero inteiro: ")
         leia(n)
 
-        se n % 2 == 0 entao
+        se (n % 2 == 0) {
             escreva(n, " e PAR")
-        senao
+        } senao {
             escreva(n, " e IMPAR")
-        fimse
+        }
     }
 }

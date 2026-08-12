@@ -5,10 +5,10 @@ programa {
         escreva("Digite um número: ")
         leia(n)
 
-        enquanto n >= 0 faca
+        enquanto (n >= 0) {
             escreva(n)
             n = n - 1
-        fimenquanto
+        }
 
         escreva("Fogo!")
     }

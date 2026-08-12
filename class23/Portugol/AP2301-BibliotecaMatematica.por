@@ -1,33 +1,36 @@
+inclua biblioteca Matematica --> mat
+inclua biblioteca Tipos --> tp
+
 programa {
     funcao inteiro fatorial(inteiro n) {
         inteiro resultado, i
         resultado = 1
-        para i de 2 ate n passo 1 faca
+        para (i = 2; i <= n; i = i + 1) {
             resultado = resultado * i
-        fimpara
+        }
         retorne resultado
     }
 
     funcao logico ehPrimo(inteiro n) {
         inteiro i
-        se n < 2 entao
+        se (n < 2) {
             retorne falso
-        fimse
-        para i de 2 ate real_para_inteiro(raiz(n)) passo 1 faca
-            se n % i == 0 entao
+        }
+        para (i = 2; i <= tp.real_para_inteiro(mat.raiz(n, 2.0)); i = i + 1) {
+            se (n % i == 0) {
                 retorne falso
-            fimse
-        fimpara
+            }
+        }
         retorne verdadeiro
     }
 
     funcao inteiro mdc(inteiro a, inteiro b) {
         inteiro t
-        enquanto b != 0 faca
+        enquanto (b != 0) {
             t = b
             b = a % b
             a = t
-        fimenquanto
+        }
         retorne a
     }
 

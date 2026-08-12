@@ -7,13 +7,13 @@ programa {
         escreva("Saque: R$ ")
         leia(saque)
 
-        se saque > saldo entao
+        se (saque > saldo) {
             escreva("Saldo insuficiente")
-        senao se saque % 10 != 0 entao
+        } senao se (saque % 10 != 0) {
             escreva("Use múltiplos de R$10")
-        senao
+        } senao {
             saldo = saldo - saque
             escreva("Saque liberado! Saldo: R$ ", saldo)
-        fimse
+        }
     }
 }

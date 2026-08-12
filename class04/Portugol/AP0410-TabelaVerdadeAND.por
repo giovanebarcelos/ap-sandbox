@@ -6,16 +6,16 @@ programa {
         escreva("A | B | A AND B")
         escreva("--+---+-------")
 
-        para ai de 1 ate 0 passo -1 faca
-            para bi de 1 ate 0 passo -1 faca
+        para (ai = 1; ai >= 0; ai = ai - 1) {
+            para (bi = 1; bi >= 0; bi = bi - 1) {
                 a = ai == 1
                 b = bi == 1
-                se a e b entao
+                se (a e b) {
                     escreva(a, " | ", b, " | verdadeiro")
-                senao
+                } senao {
                     escreva(a, " | ", b, " | falso")
-                fimse
-            fimpara
-        fimpara
+                }
+            }
+        }
     }
 }

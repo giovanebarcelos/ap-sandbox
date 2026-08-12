@@ -12,29 +12,29 @@ programa {
         inteiro opcao = 0
         real c, peso, altura, a, b, cc, maior
         inteiro n
-        enquanto (opcao != 5) faca
+        enquanto (opcao != 5) {
             menu()
             escreva("Escolha uma opcao: ")
             leia(opcao)
-            se (opcao == 1) entao
+            se (opcao == 1) {
                 escreva("Temperatura em Celsius: ")
                 leia(c)
                 escreva(c, "C = ", c * 9 / 5 + 32, "F")
-            senao se (opcao == 2) entao
+            } senao se (opcao == 2) {
                 escreva("Peso (kg): ")
                 leia(peso)
                 escreva("Altura (m): ")
                 leia(altura)
                 escreva("IMC: ", peso / (altura * altura))
-            senao se (opcao == 3) entao
+            } senao se (opcao == 3) {
                 escreva("Numero: ")
                 leia(n)
-                se (n % 2 == 0) entao
+                se (n % 2 == 0) {
                     escreva("PAR")
-                senao
+                } senao {
                     escreva("IMPAR")
-                fimse
-            senao se (opcao == 4) entao
+                }
+            } senao se (opcao == 4) {
                 escreva("a: ")
                 leia(a)
                 escreva("b: ")
@@ -42,18 +42,18 @@ programa {
                 escreva("c: ")
                 leia(cc)
                 maior = a
-                se (b > maior) entao
+                se (b > maior) {
                     maior = b
-                fimse
-                se (cc > maior) entao
+                }
+                se (cc > maior) {
                     maior = cc
-                fimse
+                }
                 escreva("Maior: ", maior)
-            senao se (opcao == 5) entao
+            } senao se (opcao == 5) {
                 escreva("Saindo...")
-            senao
+            } senao {
                 escreva("Opcao invalida! Tente novamente.")
-            fimse
-        fimenquanto
+            }
+        }
     }
 }

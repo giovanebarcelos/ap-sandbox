@@ -5,22 +5,22 @@ programa {
         inteiro dia
         escreva("Digite um número (1-7): ")
         leia(dia)
-        se dia == 1 entao
+        se (dia == 1) {
             escreva("Domingo")
-        senao se dia == 2 entao
+        } senao se (dia == 2) {
             escreva("Segunda-feira")
-        senao se dia == 3 entao
+        } senao se (dia == 3) {
             escreva("Terça-feira")
-        senao se dia == 4 entao
+        } senao se (dia == 4) {
             escreva("Quarta-feira")
-        senao se dia == 5 entao
+        } senao se (dia == 5) {
             escreva("Quinta-feira")
-        senao se dia == 6 entao
+        } senao se (dia == 6) {
             escreva("Sexta-feira")
-        senao se dia == 7 entao
+        } senao se (dia == 7) {
             escreva("Sábado")
-        senao
+        } senao {
             escreva("Número inválido! Digite 1-7.")
-        fimse
+        }
     }
 }

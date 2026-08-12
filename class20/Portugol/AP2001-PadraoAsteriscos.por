@@ -3,20 +3,20 @@ programa {
         inteiro N = 5
         inteiro i, j
         cadeia linha
-        para i de 1 ate N faca
+        para (i = 1; i <= N; i++) {
             linha = ""
-            para j de 1 ate i faca
+            para (j = 1; j <= i; j++) {
                 linha = linha + "*"
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
         escreva("")
-        para i de N ate 1 passo -1 faca
+        para (i = N; i >= 1; i = i - 1) {
             linha = ""
-            para j de 1 ate i faca
+            para (j = 1; j <= i; j++) {
                 linha = linha + "*"
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

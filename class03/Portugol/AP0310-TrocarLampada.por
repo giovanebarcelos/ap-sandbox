@@ -7,12 +7,12 @@ programa {
         escreva("A energia está desligada? (s/n): ")
         leia(energiaDesligada)
 
-        se (energiaDesligada == "s") ou (energiaDesligada == "S") entao
+        se ((energiaDesligada == "s") ou (energiaDesligada == "S")) {
             escreva("Passo 3: Retirar lâmpada queimada.")
             escreva("Passo 4: Rosquear lâmpada nova.")
             escreva("Passo 5: Ligar interruptor para testar.")
-        senao
+        } senao {
             escreva("Desligue a energia primeiro!")
-        fimse
+        }
     }
 }

@@ -2,9 +2,9 @@ programa {
     funcao inicio() {
         inteiro i
         cadeia linha = ""
-        para i de 10 ate 1 passo -1 faca
+        para (i = 10; i >= 1; i = i - 1) {
             linha = linha + i + " "
-        fimpara
+        }
         escreva(linha)
         escreva("Decolar!")
     }

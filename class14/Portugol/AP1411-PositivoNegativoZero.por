@@ -5,12 +5,12 @@ programa {
         real num
         escreva("Digite um número: ")
         leia(num)
-        se num > 0 entao
+        se (num > 0) {
             escreva(num, " é POSITIVO")
-        senao se num < 0 entao
+        } senao se (num < 0) {
             escreva(num, " é NEGATIVO")
-        senao
+        } senao {
             escreva("O número é ZERO")
-        fimse
+        }
     }
 }

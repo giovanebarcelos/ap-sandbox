@@ -9,10 +9,10 @@ programa {
 
         troco = pago - valor
 
-        se troco < 0 entao
+        se (troco < 0) {
             escreva("Dinheiro insuficiente!")
-        senao
+        } senao {
             escreva("Troco: R$ ", troco)
-        fimse
+        }
     }
 }

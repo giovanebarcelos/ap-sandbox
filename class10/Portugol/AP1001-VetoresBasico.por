@@ -7,9 +7,9 @@ programa {
 
         cadeia linha = ""
         inteiro i
-        para i de 0 ate 4 faca
+        para (i = 0; i <= 4; i++) {
             linha = linha + notas[i] + " "
-        fimpara
+        }
         escreva("Vetor completo: ", linha)
         escreva("Tamanho: 5")
     }

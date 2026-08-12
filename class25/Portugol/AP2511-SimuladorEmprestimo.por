@@ -1,3 +1,5 @@
+inclua biblioteca Matematica --> mat
+
 programa {
     funcao inicio() {
         real valor, taxa, taxaDecimal, parcela, total
@@ -11,7 +13,7 @@ programa {
         leia(meses)
 
         taxaDecimal = taxa / 100
-        parcela = valor * (taxaDecimal * potencia(1 + taxaDecimal, meses)) / (potencia(1 + taxaDecimal, meses) - 1)
+        parcela = valor * (taxaDecimal * mat.potencia(1 + taxaDecimal, meses)) / (mat.potencia(1 + taxaDecimal, meses) - 1)
         total = parcela * meses
 
         escreva("")

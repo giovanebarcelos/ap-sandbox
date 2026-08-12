@@ -5,20 +5,20 @@ programa {
         escreva("Número de linhas: ")
         leia(n)
         num = 1
-        para i de 1 ate n faca
+        para (i = 1; i <= n; i++) {
             linha = ""
-            para j de 1 ate i faca
-                se (num < 10) entao
+            para (j = 1; j <= i; j++) {
+                se (num < 10) {
                     numStr = "  " + num
-                senao se (num < 100) entao
+                } senao se (num < 100) {
                     numStr = " " + num
-                senao
+                } senao {
                     numStr = "" + num
-                fimse
+                }
                 linha = linha + numStr
                 num = num + 1
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

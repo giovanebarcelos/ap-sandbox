@@ -2,12 +2,12 @@ programa {
     funcao inteiro maiorDeTres(inteiro a, inteiro b, inteiro c) {
         inteiro m
         m = a
-        se b > m entao
+        se (b > m) {
             m = b
-        fimse
-        se c > m entao
+        }
+        se (c > m) {
             m = c
-        fimse
+        }
         retorne m
     }
 

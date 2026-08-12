@@ -5,13 +5,13 @@ programa {
         leia(nota)
         escreva("Frequência (%): ")
         leia(freq)
-        se (nota >= 70) e (freq >= 75) entao
+        se ((nota >= 70) e (freq >= 75)) {
             escreva("APROVADO!")
-        senao se (nota >= 40) e (freq >= 75) entao
+        } senao se ((nota >= 40) e (freq >= 75)) {
             escreva("RECUPERAÇÃO")
-        senao
+        } senao {
             escreva("REPROVADO")
-        fimse
+        }
         escreva("Nota: ", nota, " | Frequência: ", freq, "%")
     }
 }

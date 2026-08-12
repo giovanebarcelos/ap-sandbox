@@ -5,35 +5,35 @@ programa {
         real b
         real r
         logico continuar = verdadeiro
-        enquanto continuar faca
+        enquanto (continuar) {
             escreva("1-Somar 2-Subtrair 3-Mult 4-Div 5-Sair")
             escreva("Opção: ")
             leia(op)
-            se op == 5 entao
+            se (op == 5) {
                 continuar = falso
-            senao se (op >= 1) e (op <= 4) entao
+            } senao se ((op >= 1) e (op <= 4)) {
                 escreva("N1: ")
                 leia(a)
                 escreva("N2: ")
                 leia(b)
-                se op == 1 entao
+                se (op == 1) {
                     r = a + b
                     escreva("Resultado: ", r)
-                senao se op == 2 entao
+                } senao se (op == 2) {
                     r = a - b
                     escreva("Resultado: ", r)
-                senao se op == 3 entao
+                } senao se (op == 3) {
                     r = a * b
                     escreva("Resultado: ", r)
-                senao se op == 4 entao
-                    se b != 0 entao
+                } senao se (op == 4) {
+                    se (b != 0) {
                         r = a / b
                         escreva("Resultado: ", r)
-                    senao
+                    } senao {
                         escreva("Resultado: Erro: div por zero")
-                    fimse
-                fimse
-            fimse
-        fimenquanto
+                    }
+                }
+            }
+        }
     }
 }

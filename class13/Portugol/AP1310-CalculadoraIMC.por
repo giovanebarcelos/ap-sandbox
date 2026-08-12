@@ -10,14 +10,14 @@ programa {
         leia(altura)
         real imc = peso / (altura * altura)
         escreva("IMC: ", imc)
-        se imc < 18.5 entao
+        se (imc < 18.5) {
             escreva("Classificação: Abaixo do peso")
-        senao se imc < 25 entao
+        } senao se (imc < 25) {
             escreva("Classificação: Peso normal")
-        senao se imc < 30 entao
+        } senao se (imc < 30) {
             escreva("Classificação: Sobrepeso")
-        senao
+        } senao {
             escreva("Classificação: Obesidade")
-        fimse
+        }
     }
 }

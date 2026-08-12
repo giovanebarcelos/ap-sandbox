@@ -5,19 +5,19 @@ programa {
         inteiro maior, menor, i
         maior = numeros[0]
         menor = numeros[0]
-        para i de 1 ate 9 faca
-            se numeros[i] > maior entao
+        para (i = 1; i <= 9; i++) {
+            se (numeros[i] > maior) {
                 maior = numeros[i]
-            fimse
-            se numeros[i] < menor entao
+            }
+            se (numeros[i] < menor) {
                 menor = numeros[i]
-            fimse
-        fimpara
+            }
+        }
 
         cadeia linha = ""
-        para i de 0 ate 9 faca
+        para (i = 0; i <= 9; i++) {
             linha = linha + numeros[i] + " "
-        fimpara
+        }
         escreva("Vetor: ", linha)
         escreva("Maior: ", maior)
         escreva("Menor: ", menor)

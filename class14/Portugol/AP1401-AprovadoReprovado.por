@@ -4,10 +4,10 @@ programa {
         real media
         escreva("Digite a media do aluno: ")
         leia(media)
-        se media >= 7 entao
+        se (media >= 7) {
             escreva("APROVADO")
-        senao
+        } senao {
             escreva("REPROVADO")
-        fimse
+        }
     }
 }

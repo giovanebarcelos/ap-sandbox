@@ -2,9 +2,9 @@ programa {
     funcao inicio() {
         inteiro i
 
-        para i de 10 ate 1 passo -1 faca
+        para (i = 10; i >= 1; i = i - 1) {
             escreva(i)
-        fimpara
+        }
 
         escreva("Fogo!")
     }

@@ -8,20 +8,20 @@ programa {
         escreva("3 - kg → libras")
         escreva("Escolha: ")
         leia(op)
-        se (op == 1) entao
+        se (op == 1) {
             escreva("°C: ")
             leia(c)
             escreva(c, "°C = ", c * 9 / 5 + 32, "°F")
-        senao se (op == 2) entao
+        } senao se (op == 2) {
             escreva("km: ")
             leia(km)
             escreva(km, " km = ", km * 0.6214, " milhas")
-        senao se (op == 3) entao
+        } senao se (op == 3) {
             escreva("kg: ")
             leia(kg)
             escreva(kg, " kg = ", kg * 2.2046, " libras")
-        senao
+        } senao {
             escreva("Opção inválida!")
-        fimse
+        }
     }
 }

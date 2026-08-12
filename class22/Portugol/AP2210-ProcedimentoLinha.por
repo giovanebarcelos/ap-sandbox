@@ -3,9 +3,9 @@ programa {
         inteiro i
         cadeia saida
         saida = ""
-        para i de 1 ate tamanho faca
+        para (i = 1; i <= tamanho; i++) {
             saida = saida + caractere
-        fimpara
+        }
         escreva(saida)
     }
 

@@ -1,31 +1,34 @@
+inclua biblioteca Texto --> tx
+inclua biblioteca Tipos --> tp
+
 programa {
     funcao logico validarEmail(cadeia email) {
         inteiro tam, i, arroba
         logico temPonto
         cadeia c
 
-        tam = cadeia_tamanho(email)
+        tam = tx.numero_caracteres(email)
         arroba = -1
-        para i de 0 ate tam - 1 passo 1 faca
-            c = email[i]
-            se c == "@" entao
-                se arroba == -1 entao
+        para (i = 0; i <= tam - 1; i = i + 1) {
+            c = tp.caracter_para_cadeia(tx.obter_caracter(email, i))
+            se (c == "@") {
+                se (arroba == -1) {
                     arroba = i
-                fimse
-            fimse
-        fimpara
+                }
+            }
+        }
 
-        se arroba == -1 entao
+        se (arroba == -1) {
             retorne falso
-        fimse
+        }
 
         temPonto = falso
-        para i de arroba + 1 ate tam - 1 passo 1 faca
-            c = email[i]
-            se c == "." entao
+        para (i = arroba + 1; i <= tam - 1; i = i + 1) {
+            c = tp.caracter_para_cadeia(tx.obter_caracter(email, i))
+            se (c == ".") {
                 temPonto = verdadeiro
-            fimse
-        fimpara
+            }
+        }
 
         retorne temPonto
     }
@@ -35,10 +38,10 @@ programa {
         escreva("Digite seu email: ")
         leia(email)
 
-        se validarEmail(email) entao
+        se (validarEmail(email)) {
             escreva("Email ", email, " eh VALIDO!")
-        senao
+        } senao {
             escreva("Email ", email, " eh INVALIDO!")
-        fimse
+        }
     }
 }

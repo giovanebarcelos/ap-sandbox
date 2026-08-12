@@ -2,12 +2,12 @@ programa {
     funcao inicio() {
         inteiro i, j
         cadeia linha
-        para i de 5 ate 1 passo -1 faca
+        para (i = 5; i >= 1; i = i - 1) {
             linha = ""
-            para j de 1 ate i faca
+            para (j = 1; j <= i; j++) {
                 linha = linha + "*"
-            fimpara
+            }
             escreva(linha)
-        fimpara
+        }
     }
 }

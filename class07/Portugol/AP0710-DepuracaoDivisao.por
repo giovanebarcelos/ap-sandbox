@@ -8,10 +8,10 @@ programa {
         escreva("Denominador: ")
         leia(b)
         // BUG CORRIGIDO: verificacao antes da divisao
-        se b == 0 entao
+        se (b == 0) {
             escreva("Erro: divisão por zero!")
-        senao
+        } senao {
             escreva("Resultado: ", a / b)
-        fimse
+        }
     }
 }

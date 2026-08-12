@@ -6,12 +6,12 @@ programa {
         secreto = 42
         tent = 0
 
-        para i de 0 ate 3 faca
+        para (i = 0; i <= 3; i++) {
             tent = tent + 1
-            se palpites[i] == secreto entao
+            se (palpites[i] == secreto) {
                 escreva("Acertou em ", tent, " tentativas")
                 retorne
-            fimse
-        fimpara
+            }
+        }
     }
 }

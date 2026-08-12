@@ -5,10 +5,10 @@ programa {
         escreva("Número: ")
         leia(num)
 
-        se num % 2 == 0 entao
+        se (num % 2 == 0) {
             escreva("Par")
-        senao
+        } senao {
             escreva("Impar")
-        fimse
+        }
     }
 }

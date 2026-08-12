@@ -2,12 +2,12 @@ programa {
     funcao inicio() {
         inteiro m[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
         inteiro i, j, s
-        para i de 0 ate 2 faca
+        para (i = 0; i <= 2; i++) {
             s = 0
-            para j de 0 ate 2 faca
+            para (j = 0; j <= 2; j++) {
                 s = s + m[i][j]
-            fimpara
+            }
             escreva("Linha ", i, ": ", s)
-        fimpara
+        }
     }
 }

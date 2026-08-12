@@ -7,16 +7,16 @@ programa {
         leia(b)
         escreva("Lado c: ")
         leia(c)
-        se (a < b + c) e (b < a + c) e (c < a + b) entao
-            se (a == b) e (b == c) entao
+        se ((a < b + c) e (b < a + c) e (c < a + b)) {
+            se ((a == b) e (b == c)) {
                 escreva("Triangulo EQUILATERO")
-            senao se (a == b) ou (b == c) ou (a == c) entao
+            } senao se ((a == b) ou (b == c) ou (a == c)) {
                 escreva("Triangulo ISOSCELES")
-            senao
+            } senao {
                 escreva("Triangulo ESCALENO")
-            fimse
-        senao
+            }
+        } senao {
             escreva("Nao formam um triangulo")
-        fimse
+        }
     }
 }

@@ -1,13 +1,13 @@
 programa {
     funcao inteiro fatorial(inteiro n) {
         inteiro resultado, i
-        se n < 0 entao
+        se (n < 0) {
             retorne -1
-        fimse
+        }
         resultado = 1
-        para i de 2 ate n passo 1 faca
+        para (i = 2; i <= n; i = i + 1) {
             resultado = resultado * i
-        fimpara
+        }
         retorne resultado
     }
 
@@ -16,10 +16,10 @@ programa {
         escreva("Digite um número: ")
         leia(num)
         fat = fatorial(num)
-        se fat == -1 entao
+        se (fat == -1) {
             escreva("Não existe fatorial de número negativo!")
-        senao
+        } senao {
             escreva(num, "! = ", fat)
-        fimse
+        }
     }
 }

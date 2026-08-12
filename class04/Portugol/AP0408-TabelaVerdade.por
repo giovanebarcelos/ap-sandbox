@@ -5,22 +5,22 @@ programa {
 
         escreva("A B | A E B | A OU B")
 
-        para ai de 1 ate 0 passo -1 faca
-            para bi de 1 ate 0 passo -1 faca
+        para (ai = 1; ai >= 0; ai = ai - 1) {
+            para (bi = 1; bi >= 0; bi = bi - 1) {
                 a = ai == 1
                 b = bi == 1
-                se a e b entao
+                se (a e b) {
                     eAB = 1
-                senao
+                } senao {
                     eAB = 0
-                fimse
-                se a ou b entao
+                }
+                se (a ou b) {
                     ouAB = 1
-                senao
+                } senao {
                     ouAB = 0
-                fimse
+                }
                 escreva(ai, " ", bi, " |  ", eAB, "    |  ", ouAB)
-            fimpara
-        fimpara
+            }
+        }
     }
 }

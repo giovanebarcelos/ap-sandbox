@@ -1,3 +1,5 @@
+inclua biblioteca Matematica --> mat
+
 programa {
     funcao inicio() {
         real capital, taxa, montante
@@ -7,7 +9,7 @@ programa {
         taxa = 0.01
         meses = 12
 
-        montante = capital * potencia(1 + taxa, meses)
+        montante = capital * mat.potencia(1 + taxa, meses)
         escreva("Montante apos ", meses, " meses: ", montante)
     }
 }

@@ -2,10 +2,10 @@ programa {
     funcao inicio() {
         inteiro renda = 2500
         inteiro score = 650
-        se (renda >= 2000) e (score >= 600) entao
+        se ((renda >= 2000) e (score >= 600)) {
             escreva("Emprestimo APROVADO")
-        senao
+        } senao {
             escreva("Emprestimo NEGADO")
-        fimse
+        }
     }
 }

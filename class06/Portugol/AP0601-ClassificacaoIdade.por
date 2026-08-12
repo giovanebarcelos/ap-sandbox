@@ -4,14 +4,14 @@ programa {
         escreva("Idade: ")
         leia(idade)
 
-        se idade < 12 entao
+        se (idade < 12) {
             escreva("Crianca")
-        senao se idade < 18 entao
+        } senao se (idade < 18) {
             escreva("Adolescente")
-        senao se idade < 60 entao
+        } senao se (idade < 60) {
             escreva("Adulto")
-        senao
+        } senao {
             escreva("Idoso")
-        fimse
+        }
     }
 }

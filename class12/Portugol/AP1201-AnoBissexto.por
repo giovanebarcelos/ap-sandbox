@@ -5,10 +5,10 @@ programa {
         escreva("Digite o ano: ")
         leia(ano)
         logico bissexto = (ano % 4 == 0 e ano % 100 != 0) ou (ano % 400 == 0)
-        se bissexto entao
+        se (bissexto) {
             escreva(ano, " E bissexto")
-        senao
+        } senao {
             escreva(ano, " NAO e bissexto")
-        fimse
+        }
     }
 }

@@ -10,14 +10,14 @@ programa {
         imc = peso / (altura * altura)
         escreva("IMC: ", imc)
 
-        se imc < 18.5 entao
+        se (imc < 18.5) {
             escreva("Abaixo do peso")
-        senao se imc < 25 entao
+        } senao se (imc < 25) {
             escreva("Peso normal")
-        senao se imc < 30 entao
+        } senao se (imc < 30) {
             escreva("Sobrepeso")
-        senao
+        } senao {
             escreva("Obesidade")
-        fimse
+        }
     }
 }

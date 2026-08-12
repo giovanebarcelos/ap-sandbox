@@ -10,10 +10,10 @@ programa {
         media = (nota1 + nota2) / 2
         escreva("Media: ", media)
 
-        se media >= 7 entao
+        se (media >= 7) {
             escreva("Aprovado")
-        senao
+        } senao {
             escreva("Reprovado")
-        fimse
+        }
     }
 }

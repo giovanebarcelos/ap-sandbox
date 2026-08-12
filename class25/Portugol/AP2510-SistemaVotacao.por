@@ -12,17 +12,17 @@ programa {
         escreva("3 - Candidato C")
         escreva("0 - Sair")
 
-        enquanto continuar faca
+        enquanto (continuar) {
             escreva("Seu voto: ")
             leia(voto)
-            se voto == 0 entao
+            se (voto == 0) {
                 continuar = falso
-            senao se voto >= 1 e voto <= 3 entao
+            } senao se (voto >= 1 e voto <= 3) {
                 votos[voto - 1] = votos[voto - 1] + 1
-            senao
+            } senao {
                 votos[3] = votos[3] + 1
-            fimse
-        fimenquanto
+            }
+        }
 
         escreva("")
         escreva("Resultado:")

@@ -1,12 +1,12 @@
 programa {
     funcao inicio() {
         inteiro i, j
-        para i de 1 ate 10 faca
+        para (i = 1; i <= 10; i++) {
             escreva("Tabuada do ", i, ":")
-            para j de 1 ate 10 faca
+            para (j = 1; j <= 10; j++) {
                 escreva("  ", i, " × ", j, " = ", i * j)
-            fimpara
+            }
             escreva("")
-        fimpara
+        }
     }
 }

@@ -1,6 +1,8 @@
+inclua biblioteca Texto --> tx
+
 programa {
     funcao logico senhaForte(cadeia senha) {
-        retorne cadeia_tamanho(senha) >= 8
+        retorne tx.numero_caracteres(senha) >= 8
     }
 
     funcao inicio() {

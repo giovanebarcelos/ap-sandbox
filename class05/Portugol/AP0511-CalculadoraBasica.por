@@ -11,10 +11,10 @@ programa {
         escreva("Subtração: ", a - b)
         escreva("Multiplicação: ", a * b)
 
-        se b != 0 entao
+        se (b != 0) {
             escreva("Divisão: ", a / b)
-        senao
+        } senao {
             escreva("Divisão: Não é possível dividir por zero")
-        fimse
+        }
     }
 }

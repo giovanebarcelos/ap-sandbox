@@ -9,12 +9,12 @@ programa {
             {9.0, 9.5, 8.0, 7.5}
         }
         inteiro i, j
-        para i de 0 ate ALUNOS - 1 faca
+        para (i = 0; i <= ALUNOS - 1; i++) {
             real soma = 0.0
-            para j de 0 ate BIM - 1 faca
+            para (j = 0; j <= BIM - 1; j++) {
                 soma = soma + notas[i][j]
-            fimpara
+            }
             escreva("Media do aluno ", i, ": ", soma / BIM)
-        fimpara
+        }
     }
 }

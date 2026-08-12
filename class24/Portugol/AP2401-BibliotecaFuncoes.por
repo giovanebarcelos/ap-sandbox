@@ -8,15 +8,15 @@ programa {
     }
 
     funcao cadeia classificaImc(real valor) {
-        se valor < 18.5 entao
+        se (valor < 18.5) {
             retorne "Abaixo do peso"
-        fimse
-        se valor < 25 entao
+        }
+        se (valor < 25) {
             retorne "Peso normal"
-        fimse
-        se valor < 30 entao
+        }
+        se (valor < 30) {
             retorne "Sobrepeso"
-        fimse
+        }
         retorne "Obesidade"
     }
 

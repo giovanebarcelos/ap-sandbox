@@ -1,5 +1,7 @@
 // OperadoresAtribuicao — Aula 12
 // Demonstra operadores de atribuição composta (+=, -=, *=, /=, %=)
+inclua biblioteca Tipos --> tp
+
 programa {
     funcao inicio() {
         real x = 10
@@ -12,7 +14,7 @@ programa {
         escreva("x *= 2  -> x = ", x)
         x = x / 4
         escreva("x /= 4  -> x = ", x)
-        x = real_para_inteiro(x)
+        x = tp.real_para_inteiro(x)
         x = x % 3
         escreva("x %= 3  -> x = ", x)
     }

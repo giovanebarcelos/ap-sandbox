@@ -1,21 +1,23 @@
+inclua biblioteca Util --> u
+
 programa {
     funcao inicio() {
         inteiro secreto, palpite, tentativas
 
-        secreto = sorteia(1, 100)
+        secreto = u.sorteia(1, 100)
         tentativas = 0
 
-        repita
+        faca {
             escreva("Palpite: ")
             leia(palpite)
             tentativas = tentativas + 1
-            se palpite < secreto entao
+            se (palpite < secreto) {
                 escreva("MAIOR")
-            senao se palpite > secreto entao
+            } senao se (palpite > secreto) {
                 escreva("MENOR")
-            senao
+            } senao {
                 escreva("ACERTOU em ", tentativas, " tentativas!")
-            fimse
-        ate (palpite == secreto)
+            }
+        } enquanto (!(palpite == secreto))
     }
 }

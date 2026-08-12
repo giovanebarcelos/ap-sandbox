@@ -13,20 +13,20 @@ programa {
         leia(a)
         escreva("Número 2: ")
         leia(b)
-        se (op == 1) entao
+        se (op == 1) {
             escreva(a, " + ", b, " = ", a + b)
-        senao se (op == 2) entao
+        } senao se (op == 2) {
             escreva(a, " - ", b, " = ", a - b)
-        senao se (op == 3) entao
+        } senao se (op == 3) {
             escreva(a, " × ", b, " = ", a * b)
-        senao se (op == 4) entao
-            se (b != 0) entao
+        } senao se (op == 4) {
+            se (b != 0) {
                 escreva(a, " ÷ ", b, " = ", a / b)
-            senao
+            } senao {
                 escreva("Erro: divisão por zero!")
-            fimse
-        senao
+            }
+        } senao {
             escreva("Opção inválida!")
-        fimse
+        }
     }
 }

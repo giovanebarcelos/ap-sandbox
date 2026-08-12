@@ -12,13 +12,13 @@ programa {
         leia(b)
         escreva("Número 3: ")
         leia(c)
-        se (a >= b) e (a >= c) entao
+        se ((a >= b) e (a >= c)) {
             maior = a
-        senao se b >= c entao
+        } senao se (b >= c) {
             maior = b
-        senao
+        } senao {
             maior = c
-        fimse
+        }
         escreva("O maior número é ", maior)
     }
 }

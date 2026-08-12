@@ -5,10 +5,10 @@ programa {
         escreva("Nota: ")
         leia(nota)
 
-        se nota >= 7 entao
+        se (nota >= 7) {
             escreva("Aprovado")
-        senao
+        } senao {
             escreva("Reprovado")
-        fimse
+        }
     }
 }

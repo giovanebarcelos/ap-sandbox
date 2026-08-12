@@ -3,9 +3,9 @@ programa {
         inteiro v[5] = {1, 2, 3, 4, 5}
         cadeia linha = ""
         inteiro i
-        para i de 4 ate 0 passo -1 faca
+        para (i = 4; i >= 0; i = i - 1) {
             linha = linha + v[i] + " "
-        fimpara
+        }
         escreva("Invertido: ", linha)
     }
 }
