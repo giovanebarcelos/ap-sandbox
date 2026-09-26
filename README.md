@@ -45,6 +45,12 @@ AP0101-NomeDescritivo.ext
 > Para compilar, renomeie o arquivo para o nome da classe (ex.: `MediaDuasNotas.java`) ou  
 > use o nome da classe ao executar.  
 
+> **Nota (Teste unitário):** a partir da Aula 22, `class22/python` e `class22/cpp` ganham exemplos  
+> `AP2212-TesteUnitarioCalculadora.*` (unittest / `<cassert>`) e `AP2213-Teste*Boletim.*` (dublê de  
+> teste). Em Java, teste unitário exige Maven, então o exemplo foge da convenção de arquivo único e  
+> vira um projeto completo em `class22/java/teste-maven-junit/` (`pom.xml` + `src/main` + `src/test`,  
+> com JUnit 5 e Mockito) — veja o `README.md` da pasta.  
+
 ---  
 
 ## Tecnologias  
