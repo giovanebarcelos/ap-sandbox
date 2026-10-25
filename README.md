@@ -13,6 +13,20 @@ nem suporte a classes, herança ou interfaces — ver `planejamento.md` §24.5.
 
 ---  
 
+## IA assistida (Aulas 01B, 25 e 36)  
+
+Modelos do agente de IA usados da Aula 02 à 36 (política na Aula 01B, Slide 32):  
+
+| Pasta | Arquivo | Descrição |  
+|---|---|---|  
+| `class01B/` | `opencode.json` | Modelo gratuito (`:free`) e permissões do OpenCode: comandos com `ask`, `git push` negado — a chave de API **não** vai aqui |  
+| `class01B/` | `AGENTS.md` | Memória do projeto para o agente, com o **modo tutor** (dica, não solução) |  
+| `class25/` | `AGENTS.md`, `opencode.json` | Versão do projeto integrador final |  
+| `class25/` | `USO_DE_IA_modelo.md` | Modelo da seção **Uso de IA** do README (2 pts do critério Código limpo e Uso de IA) |  
+| `class36/` | `AGENTS.md` | Versão da solução orientada a objetos |  
+
+---  
+
 ## Estrutura de diretórios  
 
 ```  
