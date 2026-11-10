@@ -122,7 +122,7 @@ O código foi quebrado de propósito em 5 pontos, um de cada vez, e a suíte foi
 **Skills:** `grilling`, `tdd`, `code-review`.
 **Configuração:** [`opencode.json`](opencode.json) (push negado, comandos com `ask`) e [`AGENTS.md`](AGENTS.md) na raiz do projeto.
 
-| # | Artefato | Pedido (resumo) | O que o agente errou ou omitiu | O que a dupla fez |
+| # | Artefato | Pedido (resumo) | O que o agente errou ou omitiu | O que a equipe fez |
 |---|---|---|---|---|
 | 1 | `docs/analise.md` | `grilling` sobre as regras da tarifa | Não perguntou se 180 min é grátis ou pago (limite inclusivo ou não) | Decidimos "até 180 inclusive" e escrevemos o limite exato na R1 |
 | 2 | `Tarifa.java` | Revisar o cálculo da hora iniciada | Sugeriu `excedente / 60`, que cobra R$ 0,00 por 181 min (divisão inteira) | Trocamos por `(excedente + 59) / 60` e criamos os casos 181, 240 e 241 |
