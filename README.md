@@ -27,6 +27,26 @@ Modelos do agente de IA usados da Aula 02 à 36 (política na Aula 01B, Slide 32
 
 ---  
 
+## A3 — Projeto de exemplo (Aulas 1-30)  
+
+Projeto completo de referência da A3, na rota orientada a objetos recomendada: **Java 17 + Maven + JUnit 5**, com análise, diagrama de classes, casos de teste, 44 testes JUnit, quebras de propósito, Ética e Dados e o formato do registro de Uso de IA. É um guia de formato e de nível: o tema não vale como A3.  
+
+| Pasta / arquivo | Descrição |  
+|---|---|  
+| `a3/a3-bicicletario/` | Bicicletário do Campus: cadastro de ciclistas, entradas e saídas, tarifa por hora iniciada, bloqueio por atrasos e matriz de ocupação dia × turno |  
+| `a3/a3-bicicletario.zip` | O mesmo projeto, pronto para baixar |  
+
+```bash  
+cd a3/a3-bicicletario  
+mvn test                                                    # 44 testes  
+mvn -q package -DskipTests  
+java -cp target/classes br.edu.fapa.ap.bicicletario.Main  
+```  
+
+🔗 [Ver projeto completo (Java + Maven + JUnit)](https://github.com/giovanebarcelos/ap-sandbox/tree/main/a3/a3-bicicletario)  
+
+---  
+
 ## Estrutura de diretórios  
 
 ```  
